@@ -771,7 +771,7 @@ ba
 
 .cta-banner {
   background-color: var(--light-gray);
-  aspect-ratio: 580 / 380;
+  aspect-ratio: 1080 / 1350;
   border-radius: var(--radius-6);
   overflow: hidden;
   margin-block-end: 30px;
