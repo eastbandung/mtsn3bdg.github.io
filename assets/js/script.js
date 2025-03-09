@@ -66,3 +66,27 @@ for (let i = 0; i < whishlistBtns.length; i++) {
     toggleElem(this);
   });
 }
+
+/*
+CountDown Function
+*/ 
+
+var countDownDate = new Date("Mar 10,2025 10:00:00").getTime();
+var x = setInterval(function () {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hour = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  const hari = document.getElementById("dayname").innerHTML = days + "Hari";
+  const jam = document.getElementById("hour").innerHTML = hour + ":";
+  const menit = document.getElementById("minute").innerHTML = minutes + ":";
+  const detik = document.getElementById("second").innerHTML = seconds + " AM";
+
+  if (distance < 0) {
+    clearInterval(x);
+  }
+}, 1000);
+
