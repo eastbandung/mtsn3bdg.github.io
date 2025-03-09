@@ -11,6 +11,13 @@
     align-items: center;
     content: #272789;
   }
+
+  .header{
+    color: #fff;
+text-align: center;
+font-size: 30px;
+margin-bottom: 20px;
+  }
   
   .info{
     justify-content: center;
