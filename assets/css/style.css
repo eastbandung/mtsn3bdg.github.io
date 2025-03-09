@@ -544,6 +544,10 @@ ba
     #ABOUT
   \*-----------------------------------*/
 
+#about{
+  margin-top: 40px;
+}
+
 .about {
   padding-block-start: 0;
 }
